@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+//import IoTDevice from'./device/device.js';
 import './App.css';
 
 function App() {
