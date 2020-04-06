@@ -9,7 +9,7 @@ var device = new IoTDevice(ORG_ID, ACCESS_TOKEN);
 
 
 
-setInterval(() => Transmit(), 10000);
+setInterval(() => Transmit(), 1000);
 function Transmit() {
   /* This pushes / publishes data to Watson IoT*/
   device.Push('getCurrentMessage');
