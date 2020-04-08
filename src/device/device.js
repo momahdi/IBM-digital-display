@@ -1,4 +1,5 @@
 var iotf = require('ibmiotf');
+//onst axios = require('axios');
 class Device {
   constructor(org, token) {
     const device_config = {
@@ -61,7 +62,21 @@ class Device {
     return this.device_connected;
   }
 }
+/*
+const url = 'https://iot-display.herokuapp.com/display/get/5e8c8382c5c0f600242851f4';
+    const getu = async url => {
+      try {
+        const response = await axios.get(url);
+        var myData = response.data.display.message.text;
+        console.log(JSON.stringify(myData))
+         myData = JSON.stringify(myData);
+      } catch (error) {
+        console.error(error);
+      }
+    };
 
+    getu(url);
+*/
 var stateModule = (function () {
   var state; // Private Variable
 
